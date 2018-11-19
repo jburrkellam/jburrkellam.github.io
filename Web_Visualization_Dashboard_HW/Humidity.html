@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>Weather Dashboard</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="absolute.css">
+    </head>
+
+        <!-- Navigation Bar -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul style = "background-color: rgba(17, 219, 169, 0.473)">
+            <a class="navbar-brand" id="navbar-brand" href="#">Home</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </ul>
+            
+            <body>
+              <ul style="background-color: rgba(240, 240, 149, 0.637)">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="./Landing_Page.html">Latitude <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Comparisons.html">Comparisons</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Data.html">Data</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="./Cloudiness.html">Cloudiness</a>
+                      <a class="dropdown-item" href="./Humidity.html">Humidity</a>
+                      <a class="dropdown-item" href="./Max Temperature.html">Max Temperature</a>
+                      <a class="dropdown-item" href="./Wind Speed.html">Wind Speed</a>
+                    </div>
+                </ul>
+              </div>
+            </nav>
+    <ul style="background-color: rgba(89, 185, 209, 0.637)">
+      <div class="container-fluid">
+              <h1>Humidity</h1>
+              <hr class="description-hr"/>
+              <div class ="col-lg-6"><a href = "Humidity.html"><img class = "img img-responsive" src = "./Latitude v. Humidity.png" alt ="Humidity" height = "400" width = "600"></a></div>
+              <h4>Latitude vs. Humidity</h4>
+              <p>
+                As we can deduce from this graph, cities with higher percentages of Humidity generally lie between 0 and 20 
+                degrees Latitude and from 60 - 80 degrees Latitude.
+              </p>
+            </div>
+      </ul>
+    <!-- Visualization of other plots -->
+    <ul style="background-color: rgba(89, 185, 209, 0.637)">
+    <div class="col-sm-12 col-md-3">
+        <div class="box-set">
+          <div class="page-header">
+            <h1 class="title">Visualizations</h1>
+          </div>
+          <div class="row">
+              <div class ="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href = "Max Temperature.html"><img class = "img img-responsive" src ="./Latitude v. Max Temp.png" alt ="Max Temperature" height = "200" width = "200"></a></div>
+              <div class ="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href = "Cloudiness.html"><img class = "img img-responsive" src = "./Latitude v. Cloudiness.png" alt ="Cloudiness" height = "200" width = "200"></a></div>  
+          </div>
+            <div class="row">
+              <div class ="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href = "Humidity.html"><img class = "img img-responsive" src = "./Latitude v. Humidity.png" alt ="Humidity" height = "200" width = "200"></a></div>
+              <div class ="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href = "Wind Speed.html"><img class = "img img-responsive" src ="./Latitude v. Wind Speed.png" alt ="Windspeed" height = "200" width="200"></a></div>
+          </div>
+        </div>   
+      </div>
+    </ul>
+
+      <!-- Javascript functionality for dropdown -->
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>
